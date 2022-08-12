@@ -1,0 +1,16 @@
+.home {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+@media(max-width: 450px){ /*celular*/
+    .home{
+        width: 70%;
+    }
+}
+
+@media(max-width: 770px){ /*ipad*/
+    .home{
+        width: 90%;
+    }
+}
