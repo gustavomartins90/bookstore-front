@@ -10,7 +10,7 @@ import { CategoriaService } from '../categoria.service';
 })
 export class CategoriaReadComponent implements OnInit {
 
-  categorias: Categoria[] = []
+  listCategoria: Categoria[] = []
   
   displayedColumns: string[] = ['id', 'nome', 'descricao', 'livros', 'acoes'];
 
@@ -22,7 +22,7 @@ export class CategoriaReadComponent implements OnInit {
   
   findAll() {
     this.service.findAll().subscribe(resposta => {
-      this.categorias = resposta;
+      this.listCategoria = resposta;
     })
   }
 
